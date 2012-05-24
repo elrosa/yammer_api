@@ -4,8 +4,8 @@ require File.expand_path('../lib/yammer_api/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Magdalena Sikorska"]
   gem.email         = ["madzia.sikorska@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Ruby wrapper for Yammer API, using OAuth 2.0}
+  gem.summary       = gem.summary
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
