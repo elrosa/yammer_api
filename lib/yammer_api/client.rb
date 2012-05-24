@@ -1,5 +1,7 @@
 module YammerApi
   class Client
+    include Api
+
     def initialize(options={})
       @consumer_key    = options[:consumer_key]
       @consumer_secret = options[:consumer_key]
