@@ -1,5 +1,5 @@
 module YammerApi
   module Api
-    autoload :Feed, 'api/feed'
+    autoload :Feed, 'yammer_api/api/feed'
   end
 end

@@ -1,7 +1,5 @@
 module YammerApi
-
   module Api
-
     module Feed
 
       def hai
