@@ -1,0 +1,120 @@
+{
+  "messages": [
+    {
+      "privacy": "private",
+      "created_at": "2011/03/03 20:48:06 +0000",
+      "system_message": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/81089798",
+      "network_id": 104604,
+      "direct_message": true,
+      "thread_id": 81089798,
+      "attachments": [],
+      "id": 81089798,
+      "message_type": "update",
+      "url": "https://www.yammer.com/api/v1/messages/81089798",
+      "conversation_id": 706557,
+      "sender_id": 4022984,
+      "replied_to_id": null,
+      "direct_to_id": 1452329,
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "sender_type": "user",
+      "body": {
+        "parsed": "Directly messaging you.",
+        "plain": "Directly messaging you."
+      },
+      "client_url": "https://www.yammer.com/",
+      "client_type": "Web"
+    }
+  ],
+  "threaded_extended": {},
+  "meta": {
+    "followed_user_ids": [
+      1452329
+    ],
+    "unseen_message_count_by_thread": {},
+    "unseen_thread_count": 0,
+    "show_billing_banner": false,
+    "requested_poll_interval": 60,
+    "feed_name": "Direct Messages",
+    "ymodules": [],
+    "feed_desc": "Your direct message conversations",
+    "current_user_id": 4022984,
+    "realtime": {
+      "channel_id": "phrdL",
+      "uri": "https://29.rt.yammer.com/cometd/",
+      "authentication_token": "xNPzoGdI4IkT3PIvnAUN01yPxtnMK+c/bvnYKq6m7SZ4nKtWKi1OLVKyMjEwMrK0MNFRykstKc8vylayMjQwMTMACqRWFGQWVQL5xgaGFmbGFkaWtQCd3Q7a"
+    }
+  },
+  "references": [
+    {
+      "type": "user",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/users/mikealrogers-guest",
+      "stats": {
+        "followers": 1,
+        "following": 1,
+        "updates": 4
+      },
+      "state": "active",
+      "mugshot_url": "https://assets3.yammer.com/images/no_photo_small.gif",
+      "url": "https://www.yammer.com/api/v1/users/4022984",
+      "full_name": "mikeal",
+      "name": "mikealrogers-guest",
+      "id": 4022984,
+      "job_title": "Test Title"
+    },
+    {
+      "type": "user",
+      "stats": {
+        "following": 2,
+        "followers": 1,
+        "updates": 4
+      },
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/users/mknopp",
+      "mugshot_url": "https://assets1.yammer.com/user_uploaded/photos/p1/0141/2640/n1644278019_46479_62_small.jpg",
+      "state": "active",
+      "url": "https://www.yammer.com/api/v1/users/1452329",
+      "full_name": "Matt Knopp",
+      "name": "mknopp",
+      "id": 1452329,
+      "job_title": null
+    },
+    {
+      "privacy": "private",
+      "type": "thread",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=81089798",
+      "thread_starter_id": 81089798,
+      "stats": {
+        "latest_reply_id": 81089798,
+        "first_reply_id": null,
+        "updates": 1,
+        "first_reply_at": null,
+        "latest_reply_at": "2011/03/03 20:48:06 +0000"
+      },
+      "direct_message": true,
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/81089798",
+      "has_attachments": false,
+      "id": 81089798,
+      "topics": []
+    },
+    {
+      "type": "conversation",
+      "privacy": "private",
+      "participating_names": [
+        {
+          "full_name": "Matt Knopp",
+          "permalink": "mknopp"
+        },
+        {
+          "full_name": "mikeal",
+          "permalink": "mikealrogers-guest"
+        }
+      ],
+      "url": "https://www.yammer.com/api/v1/conversations/706557",
+      "id": 706557,
+      "participating_users_count": 2
+    }
+  ]
+}

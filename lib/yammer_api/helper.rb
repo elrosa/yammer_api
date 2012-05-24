@@ -1,4 +1,4 @@
-module Yammer
+module YammerApi
   module Helper
     def params options
       params_str = ""

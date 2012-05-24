@@ -1,0 +1,272 @@
+{
+  "messages": [
+    {
+      "direct_message": false,
+      "created_at": "2011/02/12 02:41:14 +0000",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/78654647",
+      "network_id": 104604,
+      "message_type": "update",
+      "thread_id": 78654647,
+      "id": 78654647,
+      "url": "https://www.yammer.com/api/v1/messages/78654647",
+      "client_type": "Web",
+      "sender_id": 1452329,
+      "replied_to_id": null,
+      "client_url": "https://www.yammer.com/",
+      "privacy": "public",
+      "attachments": [],
+      "sender_type": "user",
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "system_message": false,
+      "body": {
+        "parsed": "Here's a message with a Topic Application.",
+        "plain": "Here's a message with a Topic Application."
+      }
+    },
+    {
+      "direct_message": false,
+      "created_at": "2011/02/12 02:40:44 +0000",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/78654634",
+      "network_id": 104604,
+      "message_type": "update",
+      "thread_id": 78654634,
+      "id": 78654634,
+      "url": "https://www.yammer.com/api/v1/messages/78654634",
+      "client_type": "Web",
+      "client_url": "https://www.yammer.com/",
+      "sender_id": 1452329,
+      "replied_to_id": null,
+      "privacy": "public",
+      "attachments": [
+        {
+          "type": "image",
+          "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/images/849667",
+          "image": {
+            "url": "https://www.yammer.com/api/v1/images/849667.png",
+            "size": 41646,
+            "thumbnail_url": "https://www.yammer.com/api/v1/images/849667/medium.png"
+          },
+          "content_type": "image/png",
+          "name": "angry_unicorn.png",
+          "id": 849667
+        }
+      ],
+      "sender_type": "user",
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "system_message": false,
+      "body": {
+        "parsed": "Unicorns are Awesome, here's a photo of a Unicorn.",
+        "plain": "Unicorns are Awesome, here's a photo of a Unicorn."
+      }
+    },
+    {
+      "direct_message": false,
+      "created_at": "2011/02/12 02:40:10 +0000",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/78654623",
+      "network_id": 104604,
+      "message_type": "update",
+      "thread_id": 78648632,
+      "id": 78654623,
+      "url": "https://www.yammer.com/api/v1/messages/78654623",
+      "client_type": "Web",
+      "sender_id": 1452329,
+      "replied_to_id": 78648632,
+      "client_url": "https://www.yammer.com/",
+      "privacy": "public",
+      "attachments": [],
+      "sender_type": "user",
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "system_message": false,
+      "body": {
+        "parsed": "Yes, that was very interesting.",
+        "plain": "Yes, that was very interesting."
+      }
+    },
+    {
+      "direct_message": false,
+      "created_at": "2010/05/04 22:40:15 +0000",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/43460838",
+      "network_id": 104604,
+      "message_type": "system",
+      "thread_id": 43460838,
+      "id": 43460838,
+      "url": "https://www.yammer.com/api/v1/messages/43460838",
+      "client_type": "Web",
+      "sender_id": 1452329,
+      "replied_to_id": null,
+      "client_url": "https://www.yammer.com/",
+      "privacy": "public",
+      "attachments": [],
+      "sender_type": "user",
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "system_message": true,
+      "body": {
+        "parsed": "has created the Yammer Developers Test Community community.",
+        "plain": "has created the Yammer Developers Test Community community."
+      }
+    }
+  ],
+  "threaded_extended": {},
+  "meta": {
+    "current_user_id": 4022984,
+    "show_billing_banner": false,
+    "requested_poll_interval": 60,
+    "feed_name": "Matt Knopp's Messages",
+    "ymodules": [],
+    "feed_desc": "Messages from Matt Knopp",
+    "realtime": {
+      "uri": "https://15.rt.yammer.com/cometd/",
+      "authentication_token": "Qai72eneR5sfxZMfM4385iHm60X+pJYfctuy2QiXLhh4nKtWKi1OLVKyMjEwMrK0MNFRykstKc8vylayMjQwMTMACqRWFGQWVQL5xgYGJgbmhiYmtQCdiQ7J",
+      "channel_id": "SNFqn"
+    }
+  },
+  "references": [
+    {
+      "type": "user",
+      "job_title": "Test Title",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/users/mikealrogers-guest",
+      "stats": {
+        "following": 0,
+        "followers": 1,
+        "updates": 3
+      },
+      "mugshot_url": "https://assets3.yammer.com/images/no_photo_small.gif",
+      "url": "https://www.yammer.com/api/v1/users/4022984",
+      "state": "active",
+      "full_name": "mikeal",
+      "name": "mikealrogers-guest",
+      "id": 4022984
+    },
+    {
+      "type": "user",
+      "job_title": null,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/users/mknopp",
+      "stats": {
+        "following": 2,
+        "followers": 0,
+        "updates": 4
+      },
+      "mugshot_url": "https://assets1.yammer.com/user_uploaded/photos/p1/0141/2640/n1644278019_46479_62_small.jpg",
+      "url": "https://www.yammer.com/api/v1/users/1452329",
+      "state": "active",
+      "full_name": "Matt Knopp",
+      "name": "mknopp",
+      "id": 1452329
+    },
+    {
+      "type": "thread",
+      "direct_message": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=78654647",
+      "stats": {
+        "latest_reply_id": 78654647,
+        "updates": 1,
+        "latest_reply_at": "2011/02/12 02:41:14 +0000",
+        "first_reply_id": null,
+        "first_reply_at": null
+      },
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/78654647",
+      "thread_starter_id": 78654647,
+      "privacy": "public",
+      "has_attachments": false,
+      "id": 78654647,
+      "topics": [
+        {
+          "type": "topic",
+          "id": 712836
+        }
+      ]
+    },
+    {
+      "type": "thread",
+      "direct_message": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=78648632",
+      "stats": {
+        "latest_reply_id": 78654623,
+        "updates": 2,
+        "latest_reply_at": "2011/02/12 02:40:10 +0000",
+        "first_reply_id": 78654623,
+        "first_reply_at": "2011/02/12 02:40:10 +0000"
+      },
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/78648632",
+      "thread_starter_id": 78648632,
+      "privacy": "public",
+      "has_attachments": false,
+      "id": 78648632,
+      "topics": []
+    },
+    {
+      "type": "thread",
+      "direct_message": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=43460838",
+      "stats": {
+        "latest_reply_id": 43460838,
+        "updates": 1,
+        "latest_reply_at": "2010/05/04 22:40:15 +0000",
+        "first_reply_id": null,
+        "first_reply_at": null
+      },
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/43460838",
+      "thread_starter_id": 43460838,
+      "privacy": "public",
+      "has_attachments": false,
+      "id": 43460838,
+      "topics": []
+    },
+    {
+      "type": "thread",
+      "direct_message": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=78654634",
+      "stats": {
+        "latest_reply_id": 78654634,
+        "updates": 1,
+        "latest_reply_at": "2011/02/12 02:40:44 +0000",
+        "first_reply_id": null,
+        "first_reply_at": null
+      },
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/78654634",
+      "thread_starter_id": 78654634,
+      "privacy": "public",
+      "has_attachments": false,
+      "id": 78654634,
+      "topics": []
+    },
+    {
+      "type": "message",
+      "created_at": "2011/02/12 00:43:55 +0000",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/78648632",
+      "network_id": 104604,
+      "message_type": "update",
+      "thread_id": 78648632,
+      "url": "https://www.yammer.com/api/v1/messages/78648632",
+      "id": 78648632,
+      "sender_id": 4022984,
+      "replied_to_id": null,
+      "sender_type": "user",
+      "system_message": false,
+      "body": {
+        "plain": "Something interesting."
+      }
+    },
+    {
+      "type": "topic",
+      "permalink": "interesting",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/topics/712836",
+      "url": "https://www.yammer.com/api/v1/topics/712836",
+      "name": "Interesting",
+      "normalized_name": "interesting",
+      "id": 712836
+    }
+  ]
+}

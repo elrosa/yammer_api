@@ -1,0 +1,80 @@
+{
+  "messages": [
+    {
+      "direct_message": false,
+      "created_at": "2011/02/12 00:43:55 +0000",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/78648632",
+      "network_id": 104604,
+      "message_type": "update",
+      "client_type": "Web",
+      "id": 78648632,
+      "url": "https://www.yammer.com/api/v1/messages/78648632",
+      "sender_id": 4022984,
+      "replied_to_id": null,
+      "client_url": "https://www.yammer.com/",
+      "privacy": "public",
+      "attachments": [],
+      "sender_type": "user",
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "system_message": false,
+      "thread_id": 78648632,
+      "body": {
+        "parsed": "Something interesting.",
+        "plain": "Something interesting."
+      }
+    }
+  ],
+  "threaded_extended": {},
+  "meta": {
+    "current_user_id": 4022984,
+    "show_billing_banner": false,
+    "requested_poll_interval": 60,
+    "feed_name": "Sent",
+    "ymodules": [],
+    "feed_desc": "Messages you've sent",
+    "realtime": {
+      "uri": "https://8.rt.yammer.com/cometd/",
+      "authentication_token": "8MIk8uMsuuuVg0Oeeo1EXUFJf4Hog73UDTNQmyDGX5Z4nKtWKi1OLVKyMjEwMrK0MNFRykstKc8vylayMjQwMTMACqRWFGQWVQL5xgYGJgZmxuYmtQCdlQ7N",
+      "channel_id": "phrdW"
+    }
+  },
+  "references": [
+    {
+      "type": "user",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/users/mikealrogers-guest",
+      "job_title": "Test Title",
+      "stats": {
+        "following": 0,
+        "followers": 1,
+        "updates": 1
+      },
+      "mugshot_url": "https://assets3.yammer.com/images/no_photo_small.gif",
+      "url": "https://www.yammer.com/api/v1/users/4022984",
+      "state": "active",
+      "full_name": "Mikeal Rogers",
+      "name": "mikealrogers-guest",
+      "id": 4022984
+    },
+    {
+      "type": "thread",
+      "direct_message": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=78648632",
+      "stats": {
+        "latest_reply_id": 78654623,
+        "updates": 2,
+        "latest_reply_at": "2011/02/12 02:40:10 +0000",
+        "first_reply_id": 78654623,
+        "first_reply_at": "2011/02/12 02:40:10 +0000"
+      },
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/78648632",
+      "thread_starter_id": 78648632,
+      "privacy": "public",
+      "has_attachments": false,
+      "id": 78648632,
+      "topics": []
+    }
+  ]
+}

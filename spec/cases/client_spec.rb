@@ -10,10 +10,6 @@ describe YammerApi::Client do
 
   describe "User's network feed" do
 
-    it "should welcome" do
-      puts client.hai
-    end
-
     it "client should get users feed" do
       stub_http_request(:get, /https:\/\/yammer.com\/api\/v1\/messages.*/).
           to_return(:body => "{}")

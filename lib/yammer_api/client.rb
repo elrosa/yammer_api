@@ -1,6 +1,7 @@
 module YammerApi
   class Client
     include Api::Feed
+    include Request
 
     def initialize(options={})
       @consumer_key    = options[:consumer_key]
