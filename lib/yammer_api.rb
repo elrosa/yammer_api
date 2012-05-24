@@ -2,11 +2,14 @@ require 'omniauth-oauth2'
 
 module YammerApi
   autoload :Api,     "yammer_api/api"
+  autoload :Base,    "yammer_api/base"
   autoload :Client,  "yammer_api/client"
   autoload :Errors,  "yammer_api/errors"
   autoload :Helper,  "yammer_api/helper"
   autoload :Mash,    "yammer_api/mash"
   autoload :Request, "yammer_api/request/request"
+  autoload :Post,    "yammer_api/post"
+  autoload :User,    "yammer_api/user"
 
   class << self
     #Alias for YammerApi::Client.new

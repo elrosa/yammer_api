@@ -1,0 +1,55 @@
+{
+    "message_type":"update",
+    "liked_by":{
+        "count":0,
+        "names":[]
+    },
+    "created_at": "2011/02/12 02:41:14 +0000",
+    "thread_id":78654647,
+    "url":"https://www.yammer.com/api/v1/messages/78654647",
+    "network_id":104604,
+    "body":{
+        "plain":    "Here's a message with a Topic Application.",
+        "parsed":"Here's a message with a Topic Application."
+    },
+    "privacy":"public",
+    "client_url":"https://www.yammer.com/",
+    "sender_type":"user",
+    "id":78654647,
+    "system_message":false,
+    "attachments": [
+        {
+            "type": "image",
+            "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/images/849667",
+            "image": {
+                "url": "https://www.yammer.com/api/v1/images/849667.png",
+                "size": 41646,
+                "thumbnail_url": "https://www.yammer.com/api/v1/images/849667/medium.png"
+            },
+            "content_type": "image/png",
+            "name": "angry_unicorn.png",
+            "id": 849667
+        }
+    ],
+    "sender_id":1452329,
+    "replied_to_id":null,
+    "client_type":"Web",
+    "direct_message":false,
+    "web_url":"https://www.yammer.com/yammerdeveloperstestcommunity/messages/78654647",
+    "sender":{
+        "type":"user",
+        "stats":{
+            "updates":4,
+            "following":2,
+            "followers":1
+        },
+        "url":"https://www.yammer.com/api/v1/users/1452329",
+        "mugshot_url":"https://assets1.yammer.com/user_uploaded/photos/p1/0141/2640/n1644278019_46479_62_small.jpg",
+        "full_name":"MattKnopp",
+        "job_title":null,
+        "state":"active",
+        "name":"mknopp",
+        "web_url":"https://www.yammer.com/yammerdeveloperstestcommunity/users/mknopp",
+        "id":1452329
+    }
+}
