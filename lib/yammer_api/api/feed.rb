@@ -174,7 +174,7 @@ module YammerApi
           raw_messages = response.fetch("messages", [])
           raw_ref = response.fetch("references", [])
           raw_messages.map{|post|
-            sender = raw_ref.find{|u| u.id == post.sender_id && u.type == "user"}
+            sender = raw_ref.find{|u| u.id == post.sender_id && u.type == "user" || u.type == "guide"}
             YammerApi::Post.new(post.merge(:sender => sender))
           }
         end

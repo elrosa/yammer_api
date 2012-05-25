@@ -30,4 +30,19 @@ describe YammerApi::Client do
 
   end
 
+  describe "User's private messages" do
+
+
+    it "returned array should contain posts" do
+      stub_http_request(:get, /https:\/\/yammer.com\/api\/v1\/messages\/private.*/).
+          to_return(:body => fixture("private.json"))
+
+      posts = client.direct_messages
+
+      posts.length.should == 1
+      posts.first.should be_an_instance_of(YammerApi::Post)
+
+    end
+  end
+
 end
