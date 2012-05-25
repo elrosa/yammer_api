@@ -7,7 +7,11 @@ module YammerApi
     def attachment
       attachment = @attrs['attachments'].first
       if attachment
-        @attachment ||= Mash.new(type: attachment['type'], id: attachment['id'], image_url: attachment.fetch("image", {"url" => ""}).fetch("url"))
+        if attachment['type'] == "image"
+          @attachment ||= Mash.new(type: "image", id: attachment["id"], image_url: attachment.fetch("image", {"url" => ""}).fetch("url"))
+        else
+          @attachment ||= Mash.new(type: attachment['type'], id: attachment["id"], image_url: attachment["large_icon_url"], url: attachment["download_url"])
+        end
       end
     end
 
