@@ -4,13 +4,14 @@ module YammerApi
     include Request
 
     def initialize(options={})
-      @consumer_key    = options[:consumer_key]
-      @consumer_secret = options[:consumer_key]
-      @auth_token      = options[:oauth_token]
+      @consumer_key     = options[:consumer_key]
+      @consumer_secret  = options[:consumer_key]
+      @auth_token       = options[:oauth_token]
+      @consumer_options = options[:oauth_options] || {}
     end
 
     def consumer
-      @consumer ||= ::OAuth2::Client.new(@consumer_key, @consumer_secret, DEFAULT_OAUTH_OPTIONS)
+      @consumer ||= ::OAuth2::Client.new(@consumer_key, @consumer_secret, @consumer_options.merge(DEFAULT_OAUTH_OPTIONS))
     end
 
     def access_token
