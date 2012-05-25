@@ -19,4 +19,8 @@ describe YammerApi::Post do
     @post.attachment.type.should == "image"
   end
 
+  it "should have sender" do
+    @post.user.should be_an_instance_of(YammerApi::User)
+  end
+
 end

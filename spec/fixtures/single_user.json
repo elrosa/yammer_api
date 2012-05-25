@@ -1,0 +1,16 @@
+{
+    "type":"user",
+    "stats":{
+        "updates":4,
+        "following":2,
+        "followers":1
+    },
+    "url":"https://www.yammer.com/api/v1/users/1452329",
+    "mugshot_url":"https://assets1.yammer.com/user_uploaded/photos/p1/0141/2640/n1644278019_46479_62_small.jpg",
+    "full_name":"MattKnopp",
+    "job_title":null,
+    "state":"active",
+    "name":"mknopp",
+    "web_url":"https://www.yammer.com/yammerdeveloperstestcommunity/users/mknopp",
+    "id":1452329
+}

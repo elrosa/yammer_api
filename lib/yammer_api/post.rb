@@ -24,7 +24,7 @@ module YammerApi
 
     # @return Hashie::Mash
     def user
-      @user ||= Yammer::User.new(@attrs['sender']) if @attrs['sender']
+      @user ||= YammerApi::User.new(@attrs['sender']) if @attrs['sender']
     end
   end
 end
