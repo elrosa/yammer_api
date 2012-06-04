@@ -1,6 +1,7 @@
 module YammerApi
   class Client
     include Api::Feed
+    include Api::Messages
     include Request
 
     def initialize(options={})

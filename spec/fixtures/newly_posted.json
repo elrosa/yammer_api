@@ -1,0 +1,75 @@
+{
+    "messages": [
+    {
+      "liked_by": {
+        "count": 0,
+        "names": []
+      },
+      "system_message": false,
+      "message_type": "update",
+      "created_at": "2011/03/03 21:12:57 +0000",
+      "direct_message": false,
+      "client_type": "testingtest",
+      "body": {
+        "plain": "Another new message.",
+        "parsed": "Another new message."
+      },
+      "url": "https://www.yammer.com/api/v1/messages/81093061",
+      "network_id": 104604,
+      "privacy": "public",
+      "thread_id": 81093061,
+      "sender_type": "user",
+      "id": 81093061,
+      "attachments": [],
+      "replied_to_id": null,
+      "sender_id": 4022984,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/messages/81093061",
+      "client_url": "http://www.yammer.com"
+    }
+  ],
+  "meta": {
+    "show_billing_banner": false,
+    "requested_poll_interval": 60,
+    "ymodules": [],
+    "feed_name": "Unknown Feed",
+    "current_user_id": 4022984,
+    "feed_desc": "This feed is not known."
+  },
+  "references": [
+    {
+      "job_title": "Test Title",
+      "type": "user",
+      "stats": {
+        "updates": 5,
+        "following": 2,
+        "followers": 1
+      },
+      "url": "https://www.yammer.com/api/v1/users/4022984",
+      "mugshot_url": "https://assets3.yammer.com/images/no_photo_small.gif",
+      "full_name": "mikeal",
+      "state": "active",
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity/users/mikealrogers-guest",
+      "name": "mikealrogers-guest",
+      "id": 4022984
+    },
+    {
+      "type": "thread",
+      "topics": [],
+      "thread_starter_id": 81093061,
+      "direct_message": false,
+      "stats": {
+        "first_reply_id": null,
+        "latest_reply_at": "2011/03/03 21:12:57 +0000",
+        "updates": 0,
+        "first_reply_at": null,
+        "latest_reply_id": 81093061
+      },
+      "url": "https://www.yammer.com/api/v1/messages/in_thread/81093061",
+      "privacy": "public",
+      "has_attachments": false,
+      "web_url": "https://www.yammer.com/yammerdeveloperstestcommunity#/Threads/show?threadId=81093061",
+      "id": 81093061
+    }
+  ],
+  "threaded_extended": {}
+}

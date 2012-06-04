@@ -1,6 +1,9 @@
+require 'json'
+
 module YammerApi
 
   module Request
+
 
     DEFAULT_HEADERS = {
         :headers => {"Content-Type" => "application/json"}

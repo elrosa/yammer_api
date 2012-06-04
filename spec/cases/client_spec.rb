@@ -45,4 +45,22 @@ describe YammerApi::Client do
     end
   end
 
+  describe "Posting messages" do
+    it "should be possible to post message" do
+      stub_http_request(:post, /https:\/\/yammer.com\/api\/v1\/messages.*/).
+          to_return(:body => fixture("newly_posted.json"))
+
+      post = client.update("OHAI")
+      post.should be_an_instance_of(YammerApi::Post)
+    end
+
+    it "should be possible to post direct message" do
+      stub_http_request(:post, /https:\/\/yammer.com\/api\/v1\/messages.*/).
+          to_return(:body => fixture("newly_posted.json"))
+
+      post = client.send_direct_message("OHAI", "123")
+      post.should be_an_instance_of(YammerApi::Post)
+    end
+  end
+
 end
