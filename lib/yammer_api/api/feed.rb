@@ -82,7 +82,7 @@ module YammerApi
       #   Yammer.direct_messages
       def direct_messages(options={})
         path = "/messages/private" + params(options).to_s
-        get_and_parse_posts path, options
+        get_and_parse_dms path, options
       end
 
       # Messages followed by the logged-in user. Corresponds to the "My Feed" tab on the website.
@@ -174,8 +174,19 @@ module YammerApi
           raw_messages = response.fetch("messages", [])
           raw_ref = response.fetch("references", [])
           raw_messages.map{|post|
-            sender = raw_ref.find{|u| u.id == post.sender_id && u.type == "user"} || raw_ref.find{|u| u.id == post.sender_id && u.type == "guide"}
+            sender = raw_ref.find{|u| u.id == post.sender_id && u.type == "user"}
             YammerApi::Post.new(post.merge(:sender => sender))
+          }
+        end
+
+        def get_and_parse_dms path, options
+          response = get(path, options)
+          raw_messages = response.fetch("messages", [])
+          raw_ref = response.fetch("references", [])
+          raw_messages.map{|post|
+            sender = raw_ref.find{|u| u.id == post.sender_id && u.type == "user"} || raw_ref.find{|u| u.id == post.sender_id && u.type == "guide"}
+            recipient = raw_ref.find{|u| u.id == post.direct_to_id && u.type == "user"}
+            YammerApi::Post.new(post.merge(:sender => sender, :recipient => recipient))
           }
         end
 

@@ -1,7 +1,7 @@
 module YammerApi
   class Post < YammerApi::Base
     lazy_attr_reader :attachment, :client_url, :id, :message_type, :network_id,
-                     :posted_at, :replied_to_id, :sender_id, :text, :web_url
+                     :posted_at, :recipient, :replied_to_id, :sender_id, :text, :web_url
 
     # @return Hashie::Mash
     def attachment
@@ -26,9 +26,14 @@ module YammerApi
       @text ||= @attrs['body']['plain'] if @attrs['body'] && @attrs['body']['plain']
     end
 
-    # @return Hashie::Mash
+    # @return YammerApi::User
     def user
       @user ||= YammerApi::User.new(@attrs['sender']) if @attrs['sender']
+    end
+
+    # @return YammerApi::User
+    def recipient
+      @recipient ||= YammerApi::Recipient.new(@attrs['recipient']) if @attrs['recipient']
     end
   end
 end
