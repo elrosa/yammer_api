@@ -22,7 +22,7 @@ module YammerApi
       def post(path, body, options={})
         response = access_token.post("#{API_PATH}#{path}", DEFAULT_HEADERS.merge(options).merge({:body => body}))
         raise_errors(response)
-        response.body
+        Mash.from_json(response.body)
       end
 
       def put(path, options={})
