@@ -33,7 +33,7 @@ module YammerApi
 
     # @return YammerApi::User
     def recipient
-      @recipient ||= YammerApi::Recipient.new(@attrs['recipient']) if @attrs['recipient']
+      @recipient ||= YammerApi::User.new(@attrs['recipient']) if @attrs['recipient']
     end
   end
 end
