@@ -21,7 +21,7 @@ module YammerApi
       def update(message, options={})
         path = "/messages.json" + params(options).to_s
         response = post(path, {:body => message}.to_json)
-        YammerApi::Post.new(response)
+        parse_posts(response)
       end
 
 
@@ -37,7 +37,7 @@ module YammerApi
       def send_direct_message(message, user_id, options={})
         path = "/messages.json?direct_to_id=" + user_id
         response = post(path, {:body => message}.to_json)
-        YammerApi::Post.new(response)
+        parse_posts(response)
       end
 
       private
