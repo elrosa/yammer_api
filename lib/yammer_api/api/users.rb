@@ -14,7 +14,7 @@ module YammerApi
       def user(id, options={})
         path = "/users/#{id}"
         response = get(path, options)
-        Yammer::User.new(response)
+        YammerApi::User.new(response)
       end
 
     end
