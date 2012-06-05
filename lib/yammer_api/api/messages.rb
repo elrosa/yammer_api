@@ -40,6 +40,19 @@ module YammerApi
         parse_post(response)
       end
 
+      # Deletes a specified message from the authenticating user
+      #
+      # @format `:json`
+      # @authenticated true
+      # @rate_limited false
+      # @param id [Integer] The ID of your message.
+      # @return [YammerApi::Post] The deleted message.
+      # @see http://developer.yammer.com/api/#messages-manipulating
+      def delete_message(id, options={})
+        path = "/messages/#{id}"
+        delete(path, options)
+      end
+
       private
         def parse_post response
           raw_messages = response.fetch("messages", [])
