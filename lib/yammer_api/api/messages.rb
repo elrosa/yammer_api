@@ -19,9 +19,9 @@ module YammerApi
       # @return [YammerApi::Post] The created message.
       # @see http://developer.yammer.com/api/#messages-manipulating
       def update(message, options={})
-        path = "/messages.json" + params(options).to_s
-        response = post(path, {:body => message}.to_json)
-        parse_posts(response)
+        path = "/messages.json"
+        response = post(path, {:body => message}.merge(options).to_json)
+        parse_post(response)
       end
 
 
@@ -35,13 +35,13 @@ module YammerApi
       # @return [YammerApi::Post] The created message.
       # @see http://developer.yammer.com/api/#messages-manipulating
       def send_direct_message(message, user_id, options={})
-        path = "/messages.json?direct_to_id=" + user_id
-        response = post(path, {:body => message}.to_json)
-        parse_posts(response)
+        path = "/messages.json"
+        response = post(path, {:body => message, :direct_to_id => user_id}.merge(options).to_json)
+        parse_post(response)
       end
 
       private
-        def parse_posts response
+        def parse_post response
           raw_messages = response.fetch("messages", [])
           raw_ref = response.fetch("references", [])
           post = raw_messages.first
