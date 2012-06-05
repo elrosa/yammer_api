@@ -13,7 +13,7 @@ module YammerApi
       # @see http://developer.yammer.com/api/#users
       def user(id, options={})
         path = "/users/#{id}.json"
-        response = get(path, {:message_id => id}.to_json)
+        response = get(path, options)
         Yammer::User.new(response)
       end
 
