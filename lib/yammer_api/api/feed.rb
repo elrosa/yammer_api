@@ -144,7 +144,7 @@ module YammerApi
       # @example Return the messages in topic with ID 1234567
       #   Yammer.about_topic(1234567)
       def about_topic(id, options={})
-        path = "messages/about_topic/#{id}" + params(options).to_s
+        path = "/messages/about_topic/#{id}" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -164,7 +164,7 @@ module YammerApi
       # @example Return the messages in the thread with ID 1234567
       #   Yammer.thread(1234567)
       def thread(id, options={})
-        path = "messages/in_thread/#{id}" + params(options).to_s
+        path = "/messages/in_thread/#{id}" + params(options).to_s
         get_and_parse_posts path, options
       end
 

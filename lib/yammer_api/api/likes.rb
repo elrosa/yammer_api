@@ -13,7 +13,7 @@ module YammerApi
       # @see http://developer.yammer.com/api/#likes
       def add_like(id, options={})
         path = "/messages/liked_by/current.json"
-        post(path, {:message_id => id}.merge(options).to_json)
+        post(path, {:message_id => id}.to_json)
       end
 
       # Unlikes a specified message
