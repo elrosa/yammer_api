@@ -12,7 +12,7 @@ module YammerApi
       # @param id [Integer] The ID of user.
       # @see http://developer.yammer.com/api/#users
       def user(id, options={})
-        path = "/users/#{id}.json"
+        path = "/users/#{id}"
         response = get(path, options)
         Yammer::User.new(response)
       end
