@@ -14,7 +14,7 @@ module YammerApi
     protected
 
       def get(path, options={})
-        response = access_token.get("#{API_PATH}#{path}.json", DEFAULT_HEADERS.merge(options))
+        response = access_token.get("#{API_PATH}#{path}", DEFAULT_HEADERS.merge(options))
         raise_errors(response)
         Mash.from_json(response.body)
       end

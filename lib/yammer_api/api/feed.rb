@@ -20,7 +20,7 @@ module YammerApi
       # @example Return the 20 most recent messages in this network.
       #   Yammer.messages
       def messages(options={})
-        path = "/messages" + params(options).to_s
+        path = "/messages.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -41,7 +41,7 @@ module YammerApi
       # @example Return the 20 most recent sent messages
       #   Yammer.messages_sent
       def messages_sent(options={})
-        path = "/messages/sent" + params(options).to_s
+        path = "/messages/sent.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -61,7 +61,7 @@ module YammerApi
       # @example Return the 20 most recent received messages
       #   Yammer.messages_received
       def messages_received(options={})
-        path = "/messages/received" + params(options).to_s
+        path = "/messages/received.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -81,7 +81,7 @@ module YammerApi
       # @example Return the 20 most recent private messages
       #   Yammer.direct_messages
       def direct_messages(options={})
-        path = "/messages/private" + params(options).to_s
+        path = "/messages/private.json" + params(options).to_s
         get_and_parse_dms path, options
       end
 
@@ -102,7 +102,7 @@ module YammerApi
       #   Yammer.my_feed
       def my_feed(options={})
         #response = get('messages/following', options, :json)
-        path = "/messages/following" + params(options).to_s
+        path = "/messages/following.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -123,7 +123,7 @@ module YammerApi
       # @example Return the 20 most recent messages from the user
       #   Yammer.messages_from("bruno")
       def messages_from(id, options={})
-        path = "/messages/from_user/#{id}" + params(options).to_s
+        path = "/messages/from_user/#{id}.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -144,7 +144,7 @@ module YammerApi
       # @example Return the messages in topic with ID 1234567
       #   Yammer.about_topic(1234567)
       def about_topic(id, options={})
-        path = "/messages/about_topic/#{id}" + params(options).to_s
+        path = "/messages/about_topic/#{id}.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
@@ -164,7 +164,7 @@ module YammerApi
       # @example Return the messages in the thread with ID 1234567
       #   Yammer.thread(1234567)
       def thread(id, options={})
-        path = "/messages/in_thread/#{id}" + params(options).to_s
+        path = "/messages/in_thread/#{id}.json" + params(options).to_s
         get_and_parse_posts path, options
       end
 
