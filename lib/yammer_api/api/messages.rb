@@ -46,7 +46,6 @@ module YammerApi
       # @authenticated true
       # @rate_limited false
       # @param id [Integer] The ID of your message.
-      # @return [YammerApi::Post] The deleted message.
       # @see http://developer.yammer.com/api/#messages-manipulating
       def delete_message(id, options={})
         path = "/messages/#{id}"
