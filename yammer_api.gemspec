@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["madzia.sikorska@gmail.com"]
   gem.description   = %q{Ruby wrapper for Yammer API, using OAuth 2.0}
   gem.summary       = gem.summary
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/elrosa/yammer_api"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
